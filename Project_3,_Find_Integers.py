@@ -13,9 +13,17 @@
 #If the number mod(num_divisors) == 0 then that number works
 #Print out all numbers which work
 
+#Inputs written
 input_1 = int(input())
 input_2 = int(input())
 if input_1 >= 20 and input_1 <= 100:
     stop_range = input_1
 if input_2 >= 1 and input_2 <= 100:
     num_divisors = input_2
+
+#Input 1 calculation. NOT FINISHED, NOT WORKING!!!
+for x in range(10, stop_range):
+    while x < 0:
+        digit_1 = x % 10
+            #something
+        x = x // 10
