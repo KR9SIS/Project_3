@@ -12,3 +12,4 @@
 #Use range(10, stop_range) to cycle through numbers
 #If the number mod(num_divisors) == 0 then that number works
 #Print out all numbers which work
+
