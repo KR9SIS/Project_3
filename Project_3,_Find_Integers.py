@@ -27,17 +27,21 @@ else:
     print("Keep input 2 between 1 <= input 1 <= 12")
     quit()
 
-
 #Input 1 calculation
 for x in range(10, stop_range):
     while x > 0:
         current_x = x
         
         digit_1 = x % 10 #% 10 checks what the digit is and then i store that single digit as a variable
-        x = x // 10 #// then removes said digit so that I can check digit_2
+        x = x // 10 #// then removes said digit so that I can check digit_2 using the same method
 
         digit_2 = x % 10
         x = x // 10
         
         if (digit_1+digit_2)**2 == current_x:
             print(current_x)
+
+#Input 2 calculations (UNFINISHED, NOT WORKING YET)
+for x in range(10, stop_range):
+    if x % num_divisors == 0:
+        print(x)
