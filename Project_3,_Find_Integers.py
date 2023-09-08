@@ -18,12 +18,18 @@ input_1 = int(input())
 input_2 = int(input())
 if input_1 >= 20 and input_1 <= 100:
     stop_range = input_1
-if input_2 >= 1 and input_2 <= 100:
+else:
+    print("Keep input 1 between 20 <= input 1 <= 100")
+    quit()
+if input_2 >= 1 and input_2 <= 12:
     num_divisors = input_2
+else:
+    print("Keep input 2 between 1 <= input 1 <= 12")
+    quit()
 
 #Input 1 calculation. NOT FINISHED, NOT WORKING!!!
 for x in range(10, stop_range):
     while x < 0:
         digit_1 = x % 10
-            #something
+        digit_2 = x % 10
         x = x // 10
